@@ -1,0 +1,36 @@
+Authored by: Brendan Busey and Jarrett Horne
+
+Below are a list of the possible queries that the user can run on our applcation:
+(Please note that " $year " is simply a PHP variable that stores that year that the user inputs)
+
+1) select sum(Exports_Total+Imports_Total) from Exports, Imports where Exports_Year=$year and Imports_Year=$year
+
+2) select Imports_Total, Exports_Total from Exports,Imports where Exports_Year=$year and Imports_Year=$year
+
+3) select Imports_Goods, Imports_Services, Imports_Total from Imports where Imports_Year=$year
+
+4) select Exports_Goods, Exports_Services, Exports_Total from Exports where Exports_Year=$year
+
+5) Select Imports_Total from Imports where Imports_Year=$year
+
+6) Select Exports_Total from Exports where Exports_Year=$year
+
+7) select Exports_Goods, Exports_Services from Exports,Imports where Exports_Year=$year and Imports_Year=$year
+
+8) select Imports_Services, Imports_Goods from Imports where Imports_Year=$year
+
+9) select Imports_Services, Exports_Services from Imports, Exports where Exports_Year=$year and Imports_Year=$year
+
+10) select Exports_Goods, Imports_Goods from Exports,Imports where Exports_Year=$year and Imports_Year=$year
+
+11) Select Imports_Goods, Exports_Services from Exports, Imports where Exports_Year=$year and Imports_Year=$year
+
+12) select Imports_Services, Exports_Goods from Imports, Exports where Exports_Year=$year and Imports_Year=$year
+
+13) Select Imports_Goods from Imports where Imports_Year=$year
+
+14) Select Imports_Services from Imports where Imports_Year=$year
+
+15) Select Exports_Goods from Exports where Exports_Year=$year
+
+16) Select Exports_Services from Exports where Exports_Year=$year
